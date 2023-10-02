@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--footer styles de boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core2.11.6/dist/umd/popper.min.js"
+    integrity="sha384=oBqDVmMz9ATKxIep9TiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmkbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npmbootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384=cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+
+  <!-- Animate CSS CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  </link>
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  </link>
+
+  <!-- Favicons visualización de pagina -->
+
+  <meta name="keyword" content="Portafolio, Daniel Alejandro Mesa López, HTML, CSS, JavaScript" />
+  <link rel="icon" href="assets/icons/cva.png" type="image/gif" sizes="16x16">
+  </link>
+
+  <style type="text/css">
+    h1 {
+        text-decoration: underline;
+    }
+
+    h2 {
+        color: red;
+    }
+
+    .desarrollador {
+        color: blue;
+    }
+
+    #nombre {
+        color: green;
+    }
+
+    div button {
+        color: white !important;
+    }
+
+    .degradado {
+        background: rgb(255, 0, 85);
+        background: linear-gradient(50deg, rgba(255, 0, 85, 1)0%, rgba(177, 10, 101, 1)53% rgba(107, 19, 116, 1)88%);
+        font-size: 30px;
+        border: 3px solid blue;
+    }
+
+    .degradado {
+        transition: margin 1s;
+    }
+
+    .degradado hover {
+        margin: 50px;
+    }
+
+    /*
+ul li.nav-item:hover{
+background-color:green !important;
+}*/
+
+    ul li.nav-item:last-child {
+        font-size: 20px;
+    }
+
+    a.nav-link:hover::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: #17bb33;
+        display: block;
+    }
+</style>
+
+  <title>Daniel Mesa | Desarrollador FullStack</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav>
+    <a class="nav-link"><img src="assets/icons/cva.png" alt="Logotipo-Daniel" title="Logotipo Portafolio Daniel"
+        width=60px height=60px /></a>
+
+    <ul class="navigation">
+      <li><a href="#about" class="nav-link ">Sobre Mí</a></li>
+      <li><a href="#skills" class="nav-link">Habilidades</a></li>
+      <li><a href="#projects" class="nav-link">Proyectos</a></li>
+      <li><a href="#contact" class="nav-link">Contactame</a></li>
+      <li><a href="assets/document/Hoja de Vida Daniel Mesa Lopez.pdf" class="nav-link desarrollador">Descargar CV</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+      <ion-icon class="bars" name="menu-outline"></ion-icon>
+      <!-- <ion-icon class="times" name="close-outline"></ion-icon> -->
+    </button>
+  </nav>
+
+  <!-- Seccion hero -->
+  <section class="hero" id="about">
+    <img src="assets/images/mesa.svg" alt="daniel-doe" loading="lazy" class="hero-img" />
+    <br>
+    <div class="bio animate__animated animate__shakeX">
+      <h2 class="bio-title" id="nombre">Acerca de mí</h2>
+      <p class="bio-text">
+        Mi inspiración ha sido el CEO de Google Sundar Pinchai;
+        quien me hace ver que la ingeniería no solamente no es el campo donde uno lo enfoquen,
+        si no es el mundo donde uno lo apasione.
+      </p>
+    </div>
+  </section>
+
+  <!-- acerca de mí -->
+  <section class="more-about">
+    <h2>Más sobre mí</h2>
+    <p>
+      Ingeniero Metalúrgico con énfasis en desarrollo de Software. Soy un apasionado por la tecnología,
+      mi profesión me ha llevado a comprender la estructura de los materiales que han hecho posible el
+      avance tecnológico a nivel mundial; en este caso me he desempeñado en área de Front-end y Back-end;
+      utilizo Framework: angular, reactive, codeigniter.
+    </p>
+    <p>
+      Para mantener la lógica de negocio y aplicación separada
+      utilizo la arquitectura limpia y micro front-end y pruebas de software: Pruebas unitarias para
+      el front como kanban y Jest, pruebas de performace con Jmeter, pruebas de aceptación con playwright,
+      pruebas E2E con serenity. A su vez conozco de micro servicios y hago pruebas unitarias también en el
+      Back-end, utilizando herramientas como: cucumber, sonarQube.
+    </p>
+
+  </section>
+
+
+  <!-- Sección de habilidades -->
+  <section class="skills" id="skills">
+    <h2 class="skill-header">Mis Habilidades</h2>
+
+    <div class="skills-wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-html-5.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-css3.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-javascript.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+
+      <div class="second-set animate__animated animate__pulse">
+        <img src="assets/icons/icons8-bootstrap.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/AngularJS-Shield.svg" alt="" loading="lazy" class="icon icon-card" />
+        <img src="assets/icons/icons8-git.svg" alt="" loading="lazy" class="icon icon-card" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de proyectos -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Algunos de mis proyectos recientes</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="assets/images/expenseTracker.png" alt="expense-tracker" loading="lazy" class="project-pic" />
+        <h3 class="project-title">Larclick</h3>
+        <p class="project-details">
+          Empresa de domicilios de la Ciudad de Tunja, creada a finales
+          del año 2019, utilizando bases de datos en MySql, con
+          desarrollo en front- end utilizando el framework Bootstrap,
+          herramientas para el desarrollo del front-end como Html, Css,
+          JavaScript y el back-end utilizando el lenguaje php para las
+          conexiones de las bases de datos y sus procesos dentro del
+          desarrollo de la página, con arquitectura MVC (modelo, vista y
+          controlador).
+        </p>
+        <a href="#" target="_blank" class="project-link">Échale un vistazo</a>
+      </div>
+      <div class="project-container project-card">
+        <img src="assets/images/netflixClone.png" alt="netflic-clone" loading="lazy" class="project-pic" />
+        <h3 class="project-title">GaInstinctus Colombia</h3>
+        <p class="project-details">
+          Tienda sex shop virtual de la Ciudad de Tunja, creada a mitad
+          del año 2020, utilizando bases de datos en MySql, con
+          desarrollo en front- end utilizando el framework Bootstrap,
+          herramientas para el desarrollo del front-end como Html, Css,
+          JavaScript y el back-end utilizando el lenguaje php para las
+          conexiones de las bases de datos y sus procesos dentro del
+          desarrollo de la página, con arquitectura MVC (modelo, vista y
+          controlador).
+        </p>
+        <a href="#" target="_blank" class="project-link">Échale un vistazo</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Seccion de contacto -->
+  <section class="contact" id="contact">
+    <h2>Ponte en contacto conmigo</h2>
+    <div class="contact-form-container">
+      <div class="contact-form">
+        <form method="post" name="formulariodecontacto">
+          <div class="form-control">
+            <label class="form-label" for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa su nombre" class="form-control"
+              required />
+          </div>
+          <div class="form-control">
+            <label class="form-label" for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="Ingresa su correo" class="form-control" required />
+          </div>
+          <div class="form-control">
+            <label class="form-label" for="servicio">¿Qué servicio necesitas?</label>
+            <textarea id="servicio" cols="60" rows="10" placeholder="Ingresa su mensaje" name="servicio"
+              class="form-control" required></textarea>
+          </div>
+          <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Redes Sociales -->
+  <div class="socials">
+    <a href=" https://api.whatsapp.com/send/?phone=3202183338" target="_blank"><img
+        src="assets/icons/icons8-whatsapp-circled.gif" alt="Whatsapp" loading="lazy" class="socicon" /></a>
+    <a href="https://www.instagram.com/daniel07mlz/" target="_blank"><img src="assets/icons/icons8-instagram.gif"
+        alt="Instagram" loading="lazy" class="socicon" /></a>
+    <a href="https://www.linkedin.com/in/daniel-alejandro-mesa-lopez-01a236117/" target="_blank"><img
+        src="assets/icons/icons8-linkedin-circled.gif" alt="Linkedin" loading="lazy" class="socicon" /></a>
+    <a href="https://github.com/DanielMesaLopez" target="_blank"><img src="assets/icons/icons8-github.gif" alt="Github"
+        class="socicon" /></a>
+  </div>
+
+  <!-- Vuelve al comienzo -->
+  <i class="scroll-up" id="scroll-up"><img src="assets/icons/icons8-upward-arrow.gif" class="socicon up-arrow"
+      alt="" /></i>
+
+  <!-- Seccion del Footer -->
+  <footer>
+    <div class="bg-dark text-white p-5 mt-5 text-center">
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBackdrop"
+        aria-controls="offcanvasWithBackdrop" href="#" rel="nofollow" id="cambioDeEstilo" style="background-color: red;" >Sobre mí</button>
+        
+      <p class="copy">&copy; Copyright 2023</p>
+      <p class="copy">
+        Desarrollado &#x2623; por
+        <a href="#" target="_blank">Daniel Alejandro Mesa López</a>
+      </p>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasWithBackdrop"
+        aria-labelledby="offcanvasWithBackdropLabel">
+        <div class="offcanvas-header">
+
+          <h5 class="offcanvas-title offcanvas-centrar" id="offcanvasWithBackdropLabel">Mi Información</h5>
+
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <a class="nav-link"><img src="assets/images/daniel mesa.jpg" alt="Logotipo-Daniel"
+              title="Logotipo Portafolio Daniel" width=120px height=120px></a>
+          <br>
+          <div style="text-align: justify;">
+            <p>Tengo habilidades de aprendizaje constante y eficaz, la capacidad de comprender e interpretar
+              información, segun requerido por el usuario, con la finalidad de crear soluciones personalizadas que
+              permitan llegar a las satisfacción de la entrega final de los proyectos trabajados entre la lógica y el
+              estilo.</p>
+          </div>
+          <div style="text-align: center;">
+            <p><span>Ubicación</span></p>
+            <i class="has-map"><iframe
+                src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=fuente%20etapa%202%20tunja+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                frameborder="0" class="wpcw-widget-contact-map"></iframe></i>
+          </div>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Website scripts -->
+  <script src="assets/js/app.js"></script>
+  <script src="assets/js/contact.js"></script>
+  <script type="text/JavaScript"">
+      Email.send({
+      Host : " smtp.elasticemail.com", Username : "danielalejandro.mesa@uptc.edu.co" , Password
+    : "EC272C1BD42B718BB9CB20B5A0F7EC39AB0E" , To : 'danielalejandro.mesa@uptc.edu.co' , From
+    : "danielalejandro.mesa@uptc.edu.co" , Subject : "Este es de mi portafolio" , Body : "Cuerpo del correo electrónico"
+    }).then( message=> alert(message)
+      );
+  </script>
+
+  <!-- Ion icons scripts -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
